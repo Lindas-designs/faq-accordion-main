@@ -3,16 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --white: hsl(0, 100%, 100%);
+  --purple-100: hsl(275, 100%, 97%);
+  --purple-600: hsl(292, 16%, 49%);
+  --purple-950: hsl(292, 42%, 14%);
+}
+
 html {
   font-size: 62.5%;
-  /* 62.5% of 16px user agent font size is 10px */
+  /* 62.5% of 16px user agent font size is 10px, therefore we are setting base font size to 10px */
   /* 16px=1.6rem */
+  background-color: var(--purple-100);
 }
 body {
   font-family: "Work Sans", sans-serif;
 }
 .image {
-  height: 30vh;
+  height: 30%;
   width: 100%;
   background-image: url(assets/images/background-pattern-desktop.svg);
   background-size: cover;
@@ -23,9 +31,13 @@ body {
 }
 .accordion {
   position: relative;
-  width: 50rem;
-  top: 20vh;
+  width: 40%;
+  top: 10vh;
   margin: 5rem auto;
+  padding: 2rem;
+  background-color: var(--white);
+  height: 40rem;
+  border-radius: 1.5rem;
 }
 .attribution {
   font-size: 1.1rem;
