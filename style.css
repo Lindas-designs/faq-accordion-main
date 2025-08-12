@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  /* 62.5% of 16px user agent font size is 10px */
+  /* 16px=1.6rem */
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.image {
+  height: 30vh;
+  width: 100%;
+  background-image: url(assets/images/background-pattern-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  position: absolute;
+}
+.accordion {
+  position: relative;
+  width: 50rem;
+  top: 20vh;
+  margin: 5rem auto;
+}
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
