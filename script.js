@@ -23,9 +23,16 @@ items.forEach((item) => {
     minusIcon.classList.toggle("closed");
     hiddenBox.classList.toggle("closed");
   };
+  //Creating eventlisteners
+  const addEventListeners = function (el) {
+    el.addEventListener("click", toggleFunction);
+    el.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") toggleFunction();
+    });
+  };
 
-  // Adding event on click
-  plusIcon.addEventListener("click", toggleFunction);
-  minusIcon.addEventListener("click", toggleFunction);
-  pElement.addEventListener("click", toggleFunction);
+  // Adding events to elements
+  addEventListeners(plusIcon);
+  addEventListeners(minusIcon);
+  addEventListeners(pElement);
 });
