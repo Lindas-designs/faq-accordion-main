@@ -74,6 +74,20 @@ Defining responsive grid:
 
 1. Using 1fr and auto for defining grid width. 'Auto' results in width based on content`s width. '1 fr' will take up remaining space after fixed sizes are accounted for.
 
+Not all elements are focusable by default.
+
+1.To make page responsive to keyboard events, elements need to be focusable. To make an element focusable use attribute 'tabindex' set to 0 inside that element (e.g. <div tabindex="0"></div>). Also, if you don't want it to be focusable via the tab key then use tabindex="-1". In css to create design for focused elements only for keyboard events use :focus-visible pseudoclass on universal selector. This will apply the styles only when an element receives focus via keyboard navigation, such as tabbing, and not when clicked.
+
+Adding box-shadow
+
+```css
+*:focus-visible {
+  box-shadow: 0 0 0.25rem var(--purple-950);
+}
+```
+
+1. Value meaning (in order of appearance) -horizontal offset,vertical offset, blur, color.
+
 ```css
 .image {
   height: 30vh;

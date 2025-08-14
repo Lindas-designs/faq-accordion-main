@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0.25rem var(--purple-950);
+  border-radius: 2rem;
+}
+
 :root {
   --white: hsl(0, 100%, 100%);
   --purple-100: hsl(275, 100%, 97%);
@@ -38,6 +44,9 @@ body {
   background-color: var(--white);
   border-radius: 1.5rem;
 }
+.closed {
+  display: none;
+}
 .title {
   display: flex;
   align-items: center;
@@ -63,13 +72,18 @@ p {
   font-size: 1.4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding: 2rem 1rem;
 }
+/* p:active {
+  box-shadow: 0 0 0.25rem var(--purple-950);
+
+  cursor: pointer;
+} */
 p:hover {
   color: var(--purple-600);
   cursor: pointer;
 }
 .icon-minus {
-  display: none;
   width: 2.5rem;
   cursor: pointer;
 }
@@ -100,5 +114,7 @@ p:hover {
 2.Apply css styles for open view for those elements
 3.Create html for other accordion items (copy) 
 4.Apply css styles when items are closed and when items are active (hover, focus)
+- Navigate the questions and hide/show answers using keyboard navigation alone
+
 5.JS - open/close items on click and keyboard navigation
 6.Media queries*/
