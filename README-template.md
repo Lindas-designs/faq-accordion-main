@@ -70,6 +70,10 @@ Applying background image to an element:
 1. It is important to set height of an element (otherwise height might be 0). Height should be defined in vh or % to ensure responsiveness of the page.
 2. The cover value is often used to ensure that the background image covers the entire element, while the contain value will ensure that the entire image is visible within the element.
 
+Defining responsive grid:
+
+1. Using 1fr and auto for defining grid width. 'Auto' results in width based on content`s width. '1 fr' will take up remaining space after fixed sizes are accounted for.
+
 ```css
 .image {
   height: 30vh;
