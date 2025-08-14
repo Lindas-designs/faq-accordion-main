@@ -7,21 +7,25 @@ document.addEventListener("DOMContentLoaded", (e) => {
   });
 });
 
-// document.addEventListener("DOMContentLoaded", () => {});
+// Get all items
+const items = document.querySelectorAll(".item");
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+items.forEach((item) => {
+  //Getting all elements
+  const plusIcon = item.querySelector(".icon-plus");
+  const minusIcon = item.querySelector(".icon-minus");
+  const pElement = item.querySelector("p");
+  const hiddenBox = item.querySelector(".hidden-box");
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const items = document.querySelectorAll(".item");
-//   items.forEach((item) => {
-//     const iconPlus = item.querySelector(".icon-plus");
-//     const iconMinus = item.querySelector(".icon-minus");
-//     const hiddenBox = item.querySelector(".hidden-box");
+  //Function that displays/hides hidden box
+  const toggleFunction = function () {
+    plusIcon.classList.toggle("closed");
+    minusIcon.classList.toggle("closed");
+    hiddenBox.classList.toggle("closed");
+  };
 
-//     iconPlus.addEventListener("click", () => {
-//       hiddenBox.classList.toggle("closed");
-//       iconPlus.classList.toggle("closed");
-//       iconMinus.classList.toggle("closed");
-//     });
-//   });
-// });
+  // Adding event on click
+  plusIcon.addEventListener("click", toggleFunction);
+  minusIcon.addEventListener("click", toggleFunction);
+  pElement.addEventListener("click", toggleFunction);
+});
