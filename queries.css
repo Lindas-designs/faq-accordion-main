@@ -1,0 +1,22 @@
+/* BELOW 1120px */
+@media (max-width: 70em) {
+  .accordion {
+    width: 60%;
+  }
+}
+/* BELOW 880px */
+@media (max-width: 55em) {
+  .accordion {
+    width: 80%;
+  }
+}
+
+/* BELOW 480px */
+@media (max-width: 30em) {
+  .accordion {
+    width: 90%;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+}

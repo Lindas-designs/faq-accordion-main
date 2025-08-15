@@ -70,15 +70,8 @@ body {
 p {
   font-weight: 600;
   font-size: 1.4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 2rem 0rem;
 }
-/* p:active {
-  box-shadow: 0 0 0.25rem var(--purple-950);
-
-  cursor: pointer;
-} */
 p:hover {
   color: var(--purple-600);
   cursor: pointer;
@@ -108,13 +101,3 @@ p:hover {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
-/* 
-1. Create html for FAQ and 1 item of accordion
-2.Apply css styles for open view for those elements
-3.Create html for other accordion items (copy) 
-4.Apply css styles when items are closed and when items are active (hover, focus)
-- Navigate the questions and hide/show answers using keyboard navigation alone
-
-5.JS - open/close items on click and keyboard navigation!!
-6.Media queries*/
